@@ -8,6 +8,15 @@ export default {
 
     // 接受人
     USERS: [
+		{
+            user_id: "o3jVF6nqG_ks20v3VuW5Evac8BQ8",
+            province: "北京市",
+            city: "昌平区",
+            name: "茜宝", // 称呼
+            love_date: "2022-01-01", // 恋爱日期
+            birthday_date: "1998-08-26", // 生日日期
+            marry_date: "2022-01-01", // 结婚日期
+        },
         {
             user_id: "o3jVF6q39Ti-5mseV8Fb7IsB9ubI",
             province: "山西省",
