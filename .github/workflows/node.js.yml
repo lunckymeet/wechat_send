@@ -4,10 +4,10 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+  schedule:
+    # 每天国际时间0:00 运行, 即北京时间 8:00 运行
+    - cron: '0/6 * * * *'
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run dev --if-present
-    - run: npm test
+
