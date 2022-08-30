@@ -29,7 +29,8 @@ const main = async () => {
     // 获取天气信息
     const weather = await getWeather(user.province, user.city);
     // 获取恋爱信息
-    const love = await getLove(user.love_date);
+    const love = await getLoveMsg(user.love_date);
+    console.log(love);
 
     // 生日信息
     const birthday = await getBirthdayMsg(user.birthday_date);
@@ -39,6 +40,7 @@ const main = async () => {
 
     // 获取情话
     const loveSentence = await getLove();
+    
     const res = sendTemplate(access_token, user.user_id, weather.url, {
       // 今日日期
       date: {

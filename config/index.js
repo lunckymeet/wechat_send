@@ -22,7 +22,7 @@ export default {
             province: "山西省",
             city: "河津市",
             name: "自己", // 称呼
-            love_date: "2019-01-01", // 恋爱日期
+            love_date: "2022-01-01", // 恋爱日期
             birthday_date: "2000-02-17", // 生日日期
             marry_date: "", // 结婚日期
         }
