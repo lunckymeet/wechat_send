@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "定时推送微信消息",
   "main": "main.js",
-  "author": "幸会",
-  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "node main.js"
   },
+  "author": "幸会",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "dayjs": "^1.11.5"
